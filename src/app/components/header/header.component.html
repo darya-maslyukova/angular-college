@@ -1,0 +1,24 @@
+<header class="h">
+  <div class="h__container container">
+    <div class="h__switcher">
+      <div class="h__switcher-options">
+        <mat-radio-group aria-label="Select an option" class="h__switcher__group">
+          <mat-radio-button
+            #langSelect
+            *ngFor="let lang of translate.getLangs(); let i = index;"
+            (change)="onLangChange(langSelect.value)"
+            [value]="lang"
+            [checked]="lang === translate.currentLang"
+          >{{ langs[i] }}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <nav class="h__nav">
+      <a class="h__nav__link" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" translate>About</a>
+      <a class="h__nav__link" routerLink="/courses" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" translate>Courses</a>
+      <a class="h__nav__link" routerLink="/teachers" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" translate>Teachers</a>
+      <a class="h__nav__link" routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" translate>Contacts</a>
+    </nav>
+  </div>
+</header>

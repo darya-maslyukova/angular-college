@@ -1,0 +1,14 @@
+<main *ngIf="isLoading" class="college">
+    <section class="college__logo">
+        <div class="college__logo__photo" *ngIf="college.photo">
+            <img src="{{ college.photo }}" alt=""/>
+        </div>
+    </section>
+
+    <section class="college__info">
+        <h1 class="college__info__name">{{ college?.name }}</h1>
+        <div class="college__info__description">
+            <p [innerHTML]="college.about"></p>
+        </div>
+    </section>
+</main>

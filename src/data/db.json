@@ -1,0 +1,28 @@
+{
+  "colleges": [
+    {
+      "id": "59761c23b30d971669fb42ff",
+      "name": "Dunlap Hubbard",
+      "photo": "https://thestylingedit.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTkyNDYwMDkxNTc4OTE4MjAx/hair-colour-ideas-for-dark-brown-hair-3000x2000.webp",
+      "about": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections",
+      "media_type": "webp",
+      "vimeo_video_id": "682193476"
+    },
+    {
+      "id": "59761c233d8d0f92a6b0570d",
+      "name": "Kirsten Sellers",
+      "photo": "https://thestylingedit.com/.image/t_share/MTg5Mzg4NTkwODMzNjA4NTk3/critics-choice-awards-2021-beauty-1.jpg",
+      "about": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictio",
+      "media_type": "jpg",
+      "vimeo_video_id": "582583066"
+    },
+    {
+      "id": "59761c23fcb6254b1a06dad5",
+      "name": "Acosta Robbins",
+      "photo": "https://thestylingedit.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_1400/MTkyNDUzMTQ0NDY5MzE2OTM0/emmys-2022-3000x2000.webp",
+      "about": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+      "media_type": "webp",
+      "vimeo_video_id": "119763346"
+    }
+  ]
+}

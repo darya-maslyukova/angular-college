@@ -1,0 +1,69 @@
+{
+  "rulesDirectory": [
+    "node_modules/codelyzer"
+  ],
+  "extends": [
+    "angular-tslint-rules"
+  ],
+  "rules": {
+    "no-implicit-dependencies": false,
+    "comment-format": [
+      true,
+      "check-space",
+      {
+        "ignore-words": [
+          "TODO"
+        ]
+      }
+    ],
+    "max-line-length": [
+      true,
+      121
+    ],
+    "curly": [
+      false,
+      "as-needed"
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      [
+        "app",
+        "test"
+      ],
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      [
+        "app",
+        "test"
+      ],
+      "kebab-case"
+    ],
+    "array-type": [
+      false
+    ],
+    "i18n": [
+      false
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "trackBy-function": false,
+    "no-null-keyword": false,
+    "newline-per-chained-call": false,
+    "no-console": [
+      false
+    ],
+    "no-empty": true,
+    "no-unused-expression": false,
+    "no-unnecessary-class": false,
+    "pipe-impure": false,
+    "no-template-call-expression": false,
+    "prefer-output-readonly": false
+  }
+}
