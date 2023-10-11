@@ -1,0 +1,5 @@
+<div class="course-details" *ngIf="course">
+  <h1 class="course-details__title">{{ course.title }}</h1>
+  <p class="course-details__desc">{{ course.description }}</p>
+  <img class="course-details__img" [src]="course.img" alt="">
+</div>

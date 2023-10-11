@@ -1,15 +1,7 @@
 <main class="courses">
   <h1 class="courses__title">Courses</h1>
   <ul class="courses__list" *ngIf="courses$ | async as courses">
-    <li class="courses__course" *ngFor="let course of courses">
-      <a class="courses__course__link" [routerLink]=['courses/' +  course.id]>
-        <img src="https://yeda-college.co.il/storage/s/r501/226-16741-650ae8a4b0642.png" alt=""/>
-        <h2 class="courses__course__title">What is Lorem Ipsum</h2>
-      </a>
-      <p class="courses__course_desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-      <div class="courses__course__price">₪459</div>
-    </li>
-
+    <app-course *ngFor="let course of courses" [course]="course"></app-course>
   </ul>
 </main>
 

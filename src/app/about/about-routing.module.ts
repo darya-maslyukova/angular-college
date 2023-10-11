@@ -3,15 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CollegeComponent } from './components/college/college.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { CourseComponent } from './components/course/course.component';
+import { CourseDetailsComponent } from './components/course-details/course-details.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 
 const routes: Routes = [
   {
-    path: 'about',
+    path: '',
     component: CollegeComponent,
-    data: { state: 'aboutCollege' }
+    pathMatch: 'full',
+    data: { main: true }
   },
   {
     path: 'courses',
@@ -20,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'courses/:id',
-    component: CourseComponent
+    component: CourseDetailsComponent
   },
   {
     path: 'teachers',
@@ -31,8 +32,8 @@ const routes: Routes = [
     path: 'contacts',
     component: ContactsComponent,
     data: { state: 'contactsCollege' }
-  },
-  { path: '**', redirectTo: '/notfound' }
+  }
+  // { path: '**', redirectTo: '/notfound' }
 ];
 
 @NgModule({

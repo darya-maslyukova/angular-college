@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 32%;
+
+  .course {
+
+    &__title {
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    &__price {
+      color: red;
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+}

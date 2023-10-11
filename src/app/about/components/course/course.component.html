@@ -1,1 +1,8 @@
-<p>course works!</p>
+<li class="course" >
+  <a class="course__link" [routerLink]="[course.id]">
+    <img [src]="course.img" alt=""/>
+    <h2 class="course__title">{{ course.title }}</h2>
+  </a>
+  <p class="course_desc">{{ course.description }}</p>
+  <div class="course__price">{{ course.currency }}{{ course.price }}</div>
+</li>

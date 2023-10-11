@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { coursesReferences } from '../../../../fixtures/data/courses.fixtures';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+
+import { Observable } from 'rxjs';
+
+import { Course } from '../../../../interfaces/course.interface';
+import { COURSES_LIST$ } from './courses.providers';
 
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+  styleUrls: ['./courses.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CoursesComponent implements OnInit {
+export class CoursesComponent {
 
-  courses$ = of(coursesReferences);
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor(
+    @Inject(COURSES_LIST$) readonly courses$: Observable<Course[]>
+  ) { }
 }
