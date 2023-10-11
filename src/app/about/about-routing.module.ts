@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CollegeComponent } from './components/college/college.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { CourseComponent } from './components/course/course.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 
@@ -16,6 +17,10 @@ const routes: Routes = [
     path: 'courses',
     component: CoursesComponent,
     data: { state: 'coursesCollege' }
+  },
+  {
+    path: 'courses/:id',
+    component: CourseComponent
   },
   {
     path: 'teachers',
